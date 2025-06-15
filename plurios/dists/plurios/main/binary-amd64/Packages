@@ -1,0 +1,92 @@
+Package: avda
+Homepage: https://github.com/FershoUno/avda
+Version: 1.9.1
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Architecture: amd64
+Installed-Size: 8616
+Copyright: GPL-3.0
+Priority: optional
+Section: misc
+Filename: pool/main/a/avda/avda_1.9.1_amd64.deb
+Size: 2778264
+SHA256: 9224007fac5d7fc0968f9da8b45ab6ed6bd2a3d3f567bf8de61a0fc48003fd6f
+SHA1: aa10a559a37e412e004926fdf65bcd78b2cb315c
+MD5sum: b1b2f45200b952af0b21c2d16efca849
+Description: A desktop app for generating 
+ and viewing one-time passwords from Aegis 
+ Authenticator backups.
+
+Package: plurios-calamares-settings
+Source: calamares-settings-ubuntu
+Version: 0.3
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Installed-Size: 1340
+Depends: calamares-settings-ubuntu-common (>= 1:24.04.40), qt5-style-kvantum, qt5-style-kvantum-themes
+Conflicts: calamares-settings-ubuntu-flavor
+Provides: calamares-settings-ubuntu-flavor
+Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubuntu
+Priority: optional
+Section: devel
+Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_0.3_all.deb
+Size: 722704
+SHA256: 0c789172c1edd80ffaaea12588a19b9bd1383d74efd648e8b78508afba151205
+SHA1: 84f51a17e52bac6297481503d6c152867c169355
+MD5sum: b93a80ad6d7ad6fe4f18107a9fcc392d
+Description: PluriOS Calamares Settings and Branding
+ This package contains the Calamares settings and branding for PluriOS.
+ As part of the branding the installer slideshow is contained within.
+
+Package: plurios-grub-theme-oit
+Version: 0.0.3
+Architecture: amd64
+Depends: grub-common
+Maintainer: PluriOS Team
+Installed-Size: 772
+Priority: optional
+Section: misc
+Filename: pool/main/p/plurios-grub-theme-oit/plurios-grub-theme-oit_0.0.3_amd64.deb
+Size: 569808
+SHA256: 5554438ca910ca03e5fb75a4be263fbb70ff6184b14e6bda6d5a0a6d73881d93
+SHA1: 13b7f573f2fb4bc3e454e12681a8b0fdb8c3eee1
+MD5sum: 9bb973dd01ca591185875cda9d3b4fa8
+Description: Tema simple para Grub de PluriOS
+  Fork del tema "virtual_future_grub_theme"
+  repositorio actual RomjanHossain/Grub-Themes.
+
+Package: plurios-icons
+Version: 0.1
+Architecture: amd64
+Installed-Size: 2716
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Priority: optional
+Section: misc
+Filename: pool/main/p/plurios-icons/plurios-icons_0.1_amd64.deb
+Size: 341980
+SHA256: cc6aa147afe8172829b1c8dee16da9d4223f42726d52071caa7c7eeb769e5301
+SHA1: c9a3c597fb0d8c4cba2291e8b26e427ccb70f2f5
+MD5sum: 14ed879a50a533d912b7417a832ae642
+Description: paquete de iconos de plurios.
+
+Package: plurios-plymouth-theme-spinner
+Source: ubuntucinnamon-artwork
+Version: 0.1
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Original-Maintainer: Joshua Peisach <itzswirlz2020@outlook.com>
+Installed-Size: 484
+Depends: plymouth, plymouth-theme-spinner
+Breaks: plymouth (<< 0.9.2-3ubuntu1~)
+Replaces: plymouth (<< 0.8.1-1~)
+Provides: plymouth-theme
+Priority: optional
+Section: x11
+Filename: pool/main/u/ubuntucinnamon-artwork/plurios-plymouth-theme-spinner_0.1_all.deb
+Size: 120036
+SHA256: 6e8b637317289fc923e4eb9811ae846a2cc3999475170f86390e7dfbc305119a
+SHA1: 843192363302dd1885aae6031eb539ef33e5f10f
+MD5sum: cc85b238c60538a0d50a482b1d4e9e9c
+Description: boot animation for PluriOS
+ .
+ This package contains the spinner theme.
+

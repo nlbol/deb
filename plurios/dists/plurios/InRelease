@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: PluriOS
+Label: PluriOS Repository
+Suite: plurios
+Codename: plurios
+Version: 2.5.1
+Date: Sun, 15 Jun 2025 22:51:43 UTC
+Architectures: amd64
+Components: main
+Description: PluriOS Repository
+MD5Sum:
+ 26689c46f107a9423eaa36dae329d790 3227 main/binary-amd64/Packages
+ ceb0735491de4b2c0d84549ba7eadb2f 1436 main/binary-amd64/Packages.gz
+ e1b3eb03e12e68040fc81dc52517dea8 142 main/binary-amd64/Release
+SHA1:
+ 69afe137ecfdd558b4a2b87bfe54113467c169b3 3227 main/binary-amd64/Packages
+ cb1e06dbf899d30f978d40f96a804dc995374dae 1436 main/binary-amd64/Packages.gz
+ f49552489ea3568ab5e3d5db450efbb1088c775d 142 main/binary-amd64/Release
+SHA256:
+ d1727b21585b48c6a330785e76d60165bab336bd216d85fdb4783eabfce17d7d 3227 main/binary-amd64/Packages
+ 8214c4c27b9b46a5046f250e81b29ddbb5c9a02f6ae9076c793e75431c0ab7f7 1436 main/binary-amd64/Packages.gz
+ 9b8cea2409d92e6af57b3ce936a9bde42e4b2dd205aca9345b48dc3dd84744ea 142 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmhPTn8ACgkQw2AmWb0P
+WnN4Yg//VHhrdClvBQiX41gotSBN2keRnZzTiiedvW1+kiOQvwS9XJHw0Ti9J6Pt
+i/7Dv4c4gq1hMG2A0KbVl8T8CEZHmZVNA7t9q+xfYpDb5bsx6dxCD+o3BRvFGJFo
+MHVwkW5tUhxBxuEbFUti4HXKbmCZGbyk9WcQyZLH9A8jokeNaeSDNEojjShGLPp5
+Pb8N1AZNk566IS5J7v1+3lIHSuz+lThCgxD+ejlryaOWXK32RoS0iqQ7aJUkOtis
+J9Z3jFQSjLydu/xhan4zy4Ih2/qDIp2oLUtrZtDSX5L3NBDsuPqJ7E/yrnzypbbp
+zj6nrAW7O4mKkdQGvYF+Z5X/h0whqa0KnmHHAUdpZYldgBfcCVqZHq7xAKVBPoof
+pJTZdKxb5u2S4jJ2sGWRkFoF5IHq+SktjdchwtEq0Axy0KMXe+F7RqyIL0LlNiZ5
+5jvbE3Ug55t+jCcPP+iNB9oagBuEhfV8Zkwg4uwPCOh+nk1PH6ljlpCkSLLcifk0
+6yhq4j3uGl2lKR8s/icuwjnCgi/Lc4NNUD57KZcJi9TTtIz1jMhzmvc5hqXPg+ju
+TuuoA9rTcGenedrGEf0ai501JyIqH7WBx12MKDkvZSJS6yo78LirjqlzrlO2YUqA
+0sMnOAWbbG1KxdcsnIAaKguC7ECxHcIRDfgX9aCvWOr8m3M/a7A=
+=9DIU
+-----END PGP SIGNATURE-----

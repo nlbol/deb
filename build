@@ -1,0 +1,100 @@
+#!/bin/bash
+# Author: @FershoUno <https://github.com/FershoUno>
+
+BASENAME=$(pwd)
+DISTRO="plurios"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "This script must be run as root."
+  exit 1
+fi
+
+
+rm -rf tmp/ 2>/dev/null
+
+COMMANDS=(wget jq curl)
+NO_LOAD=()
+
+
+for CMD in "${COMMANDS[@]}"; do
+    if ! command -v "$CMD" >/dev/null 2>&1; then
+        NO_LOAD+=("$CMD")
+    fi
+done
+
+if [ ${#NO_LOAD[@]} -gt 0 ]; then
+    echo "Installing packages: ${NO_LOAD[*]}"
+    apt update
+    apt install -y "${NO_LOAD[@]}"
+else
+    echo "Installed: ${COMMANDS[@]}"
+fi
+
+repos=(
+	"https://github.com/FershoUno/avda"
+	"https://github.com/FershoUno/plurios-calamares-settings"
+	"https://github.com/FershoUno/plurios-grub-theme-oit"
+	"https://github.com/FershoUno/plurios-plymouth-theme-spinner"
+	"https://github.com/FershoUno/plurios-icons"
+)
+
+BASE_DIR=$(pwd)/tmp
+GIT_DIR="$BASE_DIR/git"
+PKG_DIR="$BASE_DIR/packages"
+
+mkdir -p "$GIT_DIR" "$PKG_DIR"
+
+for repo in "${repos[@]}"; do
+    repo_name=$(basename "$repo" .git)
+    dest="$GIT_DIR/$repo_name"
+
+    echo "Cloning $repo..."
+    git clone "$repo" "$dest" || continue
+
+    cd "$dest" || continue
+
+    if [[ -x ./build ]]; then
+        echo "Running build on $repo_name..."
+        ./build || { echo "Build failure in $repo_name"; continue; }
+    else
+        echo "No 'build' script found in $repo_name"
+        continue
+    fi
+
+    deb_file=$(find . -type f -name "*.deb" | head -n 1)
+    if [[ -n $deb_file ]]; then
+        echo "Copying $deb_file a $PKG_DIR"
+        cp "$deb_file" "$PKG_DIR/"
+    else
+        echo "No .deb found in $repo_name"
+    fi
+
+    cd "$BASE_DIR"
+done
+
+echo "Ending: $PKG_DIR"
+
+cd $BASENAME
+
+REPO_DIR="plurios"
+PKG_DIR="tmp/packages"
+
+for deb in "$PKG_DIR"/*.deb; do
+    if [[ -f "$deb" ]]; then
+        pkg_name=$(dpkg-deb -f "$deb" Package)
+        echo "→ Processing $pkg_name"
+
+        sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" remove "$DISTRO" "$pkg_name" 2>/dev/null
+
+        if ! sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" includedeb "$DISTRO" "$deb"; then
+            echo "Error including package $pkg_name"
+        fi
+    fi
+done
+
+if ! sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" export; then
+    echo "Error exporting indexes"
+fi
+
+chown -R $SUDO_USER:$SUDO_USER plurios/
+chown -R $SUDO_USER:$SUDO_USER tmp/
