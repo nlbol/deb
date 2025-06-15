@@ -3,7 +3,7 @@ Label: PluriOS Repository
 Codename: plurios
 Suite: plurios
 Version: 2.5.1
-Architectures: amd64
+Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
 SignWith: F4529B2685F6E6B1E7465FEDC3602659BD0F5A73

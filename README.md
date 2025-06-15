@@ -7,7 +7,7 @@ Los paquetes de este repositorio fueron probados en las siguientes distribucione
 
 ## Instrucciones
 
-Los siguientes comandos se deben ejecutar como superusuario
+Los siguientes comandos se deben ejecutar como superusuario:  
 
 Agregar la clave GPG del repositorio  
 
