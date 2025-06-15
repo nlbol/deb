@@ -3,19 +3,28 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Sun, 15 Jun 2025 22:51:43 UTC
-Architectures: amd64
+Date: Sun, 15 Jun 2025 23:50:45 UTC
+Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
 MD5Sum:
- 26689c46f107a9423eaa36dae329d790 3227 main/binary-amd64/Packages
- ceb0735491de4b2c0d84549ba7eadb2f 1436 main/binary-amd64/Packages.gz
+ ed647b8e77adf59fcbad581c7dc4d572 3227 main/binary-amd64/Packages
+ 965f6f82bd4360258a783ffa4bdb6444 1436 main/binary-amd64/Packages.gz
  e1b3eb03e12e68040fc81dc52517dea8 142 main/binary-amd64/Release
+ c5112b18d2f0965d8c282d4e487a23a9 1681 main/binary-i386/Packages
+ bd4f424b1a0148cc7ce916ece616e3ee 813 main/binary-i386/Packages.gz
+ 035368ef1961034bc05a815376ee52c2 141 main/binary-i386/Release
 SHA1:
- 69afe137ecfdd558b4a2b87bfe54113467c169b3 3227 main/binary-amd64/Packages
- cb1e06dbf899d30f978d40f96a804dc995374dae 1436 main/binary-amd64/Packages.gz
+ 4039a2431168dfc958b6a31cd521d886b93fa6b3 3227 main/binary-amd64/Packages
+ 920858c034e2daca9c6c156981bde4bfd5ecc295 1436 main/binary-amd64/Packages.gz
  f49552489ea3568ab5e3d5db450efbb1088c775d 142 main/binary-amd64/Release
+ f83ff6fffaddec9401e536f1f3c602d35cd6bbe5 1681 main/binary-i386/Packages
+ df5196a024cbe190e665c2eb7cad0583b4cc0d0b 813 main/binary-i386/Packages.gz
+ d5634c1edb5b47aa1353ad322fc0d80e24586204 141 main/binary-i386/Release
 SHA256:
- d1727b21585b48c6a330785e76d60165bab336bd216d85fdb4783eabfce17d7d 3227 main/binary-amd64/Packages
- 8214c4c27b9b46a5046f250e81b29ddbb5c9a02f6ae9076c793e75431c0ab7f7 1436 main/binary-amd64/Packages.gz
+ 2710e145aa6487e516b602c10c14dad8f19af5796ae9d49cf63278dded21a2e5 3227 main/binary-amd64/Packages
+ 670591d9a38f553bba46e2ffc7d70c5d95bb64efe8dd3c0bd744b7c720c0de10 1436 main/binary-amd64/Packages.gz
  9b8cea2409d92e6af57b3ce936a9bde42e4b2dd205aca9345b48dc3dd84744ea 142 main/binary-amd64/Release
+ 48e8bef3a077531cf993330ed7870ea00872607e8b913624b546447fa07ad924 1681 main/binary-i386/Packages
+ dcafd962ab91d57fd13e774f4fa0c9d85e575ae6592cca6c555fdcaf54487d34 813 main/binary-i386/Packages.gz
+ cb75cbd808e76897900b7c080a564279acb1dbd050b0ff80aae920e4e8c6f6d9 141 main/binary-i386/Release

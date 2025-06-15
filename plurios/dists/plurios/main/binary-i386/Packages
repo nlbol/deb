@@ -1,21 +1,3 @@
-Package: avda
-Homepage: https://github.com/FershoUno/avda
-Version: 1.9.1
-Maintainer: Fersho Uno <fersh0un0@gmail.com>
-Architecture: amd64
-Installed-Size: 8616
-Copyright: GPL-3.0
-Priority: optional
-Section: misc
-Filename: pool/main/a/avda/avda_1.9.1_amd64.deb
-Size: 2779040
-SHA256: 10cca86469e6279db1b8203c9bf4f9b6f54441ab155eae955d03907e0b8c7290
-SHA1: 1a33a6e57f185ae2f9b9b3718345f53c485f4010
-MD5sum: 725bc6af2792974506c06e09d85849cf
-Description: A desktop app for generating 
- and viewing one-time passwords from Aegis 
- Authenticator backups.
-
 Package: plurios-calamares-settings
 Source: calamares-settings-ubuntu
 Version: 0.3
@@ -36,37 +18,6 @@ MD5sum: 3a82d93a8ced7a047b73963641ddbfe4
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
-
-Package: plurios-grub-theme-oit
-Version: 0.0.3
-Architecture: amd64
-Depends: grub-common
-Maintainer: PluriOS Team
-Installed-Size: 772
-Priority: optional
-Section: misc
-Filename: pool/main/p/plurios-grub-theme-oit/plurios-grub-theme-oit_0.0.3_amd64.deb
-Size: 570316
-SHA256: 90492cd951a6ea2367d04402d41095de0628ebef919996ddcd772449931a25ff
-SHA1: 0f7346bc42f819f5d1c96f275f293a3fddf92491
-MD5sum: 3f337576862c3027082d5b8b9c43d19c
-Description: Tema simple para Grub de PluriOS
-  Fork del tema "virtual_future_grub_theme"
-  repositorio actual RomjanHossain/Grub-Themes.
-
-Package: plurios-icons
-Version: 0.1
-Architecture: amd64
-Installed-Size: 2716
-Maintainer: Fersho Uno <fersh0un0@gmail.com>
-Priority: optional
-Section: misc
-Filename: pool/main/p/plurios-icons/plurios-icons_0.1_amd64.deb
-Size: 341980
-SHA256: 62da48906c1dfe2fd3877dd32c8236ea9ce9e098488777a79a2ecd5dbe616cb7
-SHA1: 72ab90d7cc83cea90b4e411d8b24f23252d44752
-MD5sum: 21a3801f1b676d1d9e79d85cc85e559a
-Description: paquete de iconos de plurios.
 
 Package: plurios-plymouth-theme-spinner
 Source: ubuntucinnamon-artwork
