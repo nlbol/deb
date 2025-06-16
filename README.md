@@ -17,6 +17,10 @@ Agregar el repositorio PluriOS
 
     echo "deb https://nlbol.github.io/deb/plurios plurios main" | tee /etc/apt/sources.list.d/plurios.list
 
+## Como trabaja
+
+Si deseas saber como funciona DEB, presiona en este enlace -> [COMO-FUNCIONA.md](COMO-FUNCIONA.md)   
+
 ## Inspiración
 
 La implementación de este repositorio fue un reto inspirado de 'MiniOS Repository'.  

@@ -36,6 +36,7 @@ repos=(
 	"https://github.com/FershoUno/plurios-grub-theme-oit"
 	"https://github.com/FershoUno/plurios-plymouth-theme-spinner"
 	"https://github.com/FershoUno/plurios-icons"
+	"https://github.com/FershoUno/rustdesk"
 )
 
 BASE_DIR=$(pwd)/tmp
@@ -49,7 +50,7 @@ for repo in "${repos[@]}"; do
     dest="$GIT_DIR/$repo_name"
 
     echo "Cloning $repo..."
-    git clone "$repo" "$dest" || continue
+    git clone --depth=1 --single-branch "$repo" "$dest" || continue
 
     cd "$dest" || continue
 
