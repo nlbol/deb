@@ -9,9 +9,12 @@ Los paquetes de este repositorio fueron probados en las siguientes distribucione
 
 Los siguientes comandos se deben ejecutar como superusuario:  
 
-Agregar la clave GPG del repositorio  
+Agregar la clave GPG del repositorio (curl o wget)
 
     curl https://nlbol.github.io/deb/plurios.gpg | gpg --dearmor > /etc/apt/trusted.gpg.d/plurios.gpg
+
+    wget -q https://nlbol.github.io/deb/plurios.gpg -O- | gpg --dearmor > /etc/apt/trusted.gpg.d/plurios.gpg
+
 
 Agregar el repositorio PluriOS  
 
