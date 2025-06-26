@@ -1,36 +1,31 @@
 #!/bin/bash
 # Author: @FershoUno <https://github.com/FershoUno>
 
+set -e
+
+# Colores
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+WHITE="\e[0m"
+
 BASENAME=$(pwd)
 DISTRO="plurios"
+VERSION="2.5.1"
+ARCH="amd64 i386"
+SIGN="F4529B2685F6E6B1E7465FEDC3602659BD0F5A73"
+BASE_DIR="$BASENAME/tmp"
+GIT_DIR="$BASE_DIR/git"
+PKG_DIR="$BASE_DIR/packages"
+REPO_DIR="$BASENAME/plurios"
+REPO_LIST="$BASE_DIR/repo-list.txt"
+LOG_FILE="$BASE_DIR/repo.log"
 
-if [ "$(id -u)" -ne 0 ]; then
-  echo "This script must be run as root."
-  exit 1
-fi
-
-
-rm -rf tmp/ 2>/dev/null
-
-COMMANDS=(wget jq curl)
+COMMANDS=(wget jq curl git reprepro dpkg)
 NO_LOAD=()
 
-
-for CMD in "${COMMANDS[@]}"; do
-    if ! command -v "$CMD" >/dev/null 2>&1; then
-        NO_LOAD+=("$CMD")
-    fi
-done
-
-if [ ${#NO_LOAD[@]} -gt 0 ]; then
-    echo "Installing packages: ${NO_LOAD[*]}"
-    apt update
-    apt install -y "${NO_LOAD[@]}"
-else
-    echo "Installed: ${COMMANDS[@]}"
-fi
-
-repos=(
+# Repositorios a manejar
+declare -a repos=(
 	"https://github.com/FershoUno/avda"
 	"https://github.com/FershoUno/plurios-calamares-settings"
 	"https://github.com/FershoUno/plurios-grub-theme-oit"
@@ -39,63 +34,164 @@ repos=(
 	"https://github.com/FershoUno/rustdesk"
 )
 
-BASE_DIR=$(pwd)/tmp
-GIT_DIR="$BASE_DIR/git"
-PKG_DIR="$BASE_DIR/packages"
+# Verifica permisos
+if [ "$(id -u)" -ne 0 ]; then
+  echo -e "${RED}Este script debe ejecutarse como root.${WHITE}"
+  exit 1
+fi
 
-mkdir -p "$GIT_DIR" "$PKG_DIR"
+# Verifica dependencias
+for CMD in "${COMMANDS[@]}"; do
+    if ! command -v "$CMD" &>/dev/null; then
+        NO_LOAD+=("$CMD")
+    fi
+done
 
+if [ ${#NO_LOAD[@]} -gt 0 ]; then
+    echo -e "${YELLOW}Instalando paquetes faltantes: ${NO_LOAD[*]}${WHITE}"
+    apt update
+    apt install -y "${NO_LOAD[@]}"
+else
+    echo -e "${GREEN}Todos los comandos necesarios están instalados.${WHITE}"
+fi
+
+mkdir -p "$GIT_DIR" "$PKG_DIR" "$REPO_DIR"
+> "$LOG_FILE"
+
+# Inicializa repositorio APT si no existe
+if [ ! -f "$REPO_DIR/conf/distributions" ]; then
+    echo -e "${WHITE}Inicializando repositorio APT...${WHITE}"
+    mkdir -p "$REPO_DIR/conf"
+    cat >"$REPO_DIR/conf/distributions" <<EOF
+Origin: PluriOS
+Label: PluriOS Repository
+Codename: $DISTRO
+Suite: $DISTRO
+Version: $VERSION
+Architectures: $ARCH
+Components: main
+Description: Repositorio de paquetes de PluriOS
+SignWith: $SIGN
+EOF
+fi
+
+# Guarda lista actual de repos para comparar después
+> "$REPO_LIST.new"
+for repo in "${repos[@]}"; do echo "$repo" >> "$REPO_LIST.new"; done
+
+# Detecta repos eliminados
+if [ -f "$REPO_LIST" ]; then
+    mapfile -t OLD_REPOS < "$REPO_LIST"
+    mapfile -t NEW_REPOS < "$REPO_LIST.new"
+    for old in "${OLD_REPOS[@]}"; do
+        if [[ ! " ${NEW_REPOS[*]} " =~ " $old " ]]; then
+            repo_name=$(basename "$old" .git)
+            debs_to_remove=$(find "$PKG_DIR" -name "$repo_name*.deb")
+            for deb in $debs_to_remove; do
+                pkg_name=$(dpkg-deb -f "$deb" Package)
+                echo -e "${RED}→ Eliminando paquete $pkg_name del repo (repositorio $repo_name eliminado)${WHITE}"
+                echo "Eliminado $pkg_name (repositorio eliminado)" >> "$LOG_FILE"
+                sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" remove "$DISTRO" "$pkg_name" || true
+                rm -f "$deb"
+            done
+            rm -rf "$GIT_DIR/$repo_name"
+        fi
+    done
+fi
+
+mv "$REPO_LIST.new" "$REPO_LIST"
+
+# Clonación, build, comparación de versión
 for repo in "${repos[@]}"; do
     repo_name=$(basename "$repo" .git)
     dest="$GIT_DIR/$repo_name"
+    build_needed=false
 
-    echo "Cloning $repo..."
-    git clone --depth=1 --single-branch "$repo" "$dest" || continue
+    echo -e "${WHITE}→ Procesando $repo_name${WHITE}"
+    echo "$repo_name" >> "$LOG_FILE"
 
-    cd "$dest" || continue
+    if [ -d "$dest/.git" ]; then
+        cd "$dest"
+        OLD_COMMIT=$(git rev-parse HEAD)
+        git pull --quiet
+        NEW_COMMIT=$(git rev-parse HEAD)
 
-    if [[ -x ./build ]]; then
-        echo "Running build on $repo_name..."
-        ./build || { echo "Build failure in $repo_name"; continue; }
+        if [ "$OLD_COMMIT" != "$NEW_COMMIT" ]; then
+            echo -e "${GREEN}  Cambios detectados ($OLD_COMMIT → $NEW_COMMIT)${WHITE}"
+            echo "Cambios detectados ($OLD_COMMIT → $NEW_COMMIT)" >> "$LOG_FILE"
+            build_needed=true
+        else
+            echo -e "${YELLOW}  Sin cambios en $repo_name, build omitido${WHITE}"
+            echo "Sin cambios. Build omitido." >> "$LOG_FILE"
+        fi
     else
-        echo "No 'build' script found in $repo_name"
-        continue
+        echo -e "${GREEN}  Clonando nuevo repositorio...${WHITE}"
+        git clone --depth=1 --single-branch "$repo" "$dest"
+        cd "$dest"
+        build_needed=true
+        echo "Nuevo repositorio clonado." >> "$LOG_FILE"
     fi
 
-    deb_file=$(find . -type f -name "*.deb" | head -n 1)
-    if [[ -n $deb_file ]]; then
-        echo "Copying $deb_file a $PKG_DIR"
-        cp "$deb_file" "$PKG_DIR/"
-    else
-        echo "No .deb found in $repo_name"
-    fi
+    if [ "$build_needed" = true ]; then
+        if [[ -x ./build ]]; then
+            echo -e "${WHITE}  Ejecutando script de build...${WHITE}"
+            ./build || { echo -e "${RED}Error al compilar $repo_name${WHITE}"; echo "Error de compilación" >> "$LOG_FILE"; continue; }
 
-    cd "$BASE_DIR"
-done
+            deb_file=$(find . -type f -name "*.deb" | head -n 1)
+            if [[ -n $deb_file ]]; then
+                pkg_name=$(dpkg-deb -f "$deb_file" Package)
+                pkg_ver=$(dpkg-deb -f "$deb_file" Version)
+                echo "  Versión generada: $pkg_ver"
 
-echo "Ending: $PKG_DIR"
+                current_ver=$(sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" list "$DISTRO" "$pkg_name" 2>/dev/null | awk '{print $3}' | head -n1)
 
-cd $BASENAME
-
-REPO_DIR="plurios"
-PKG_DIR="tmp/packages"
-
-for deb in "$PKG_DIR"/*.deb; do
-    if [[ -f "$deb" ]]; then
-        pkg_name=$(dpkg-deb -f "$deb" Package)
-        echo "→ Processing $pkg_name"
-
-        sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" remove "$DISTRO" "$pkg_name" 2>/dev/null
-
-        if ! sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" includedeb "$DISTRO" "$deb"; then
-            echo "Error including package $pkg_name"
+                if [[ -z "$current_ver" ]] || dpkg --compare-versions "$pkg_ver" gt "$current_ver"; then
+                    echo -e "${GREEN}  Nueva versión $pkg_ver detectada. Se integrará.${WHITE}"
+                    echo "Incluido: $pkg_name $pkg_ver" >> "$LOG_FILE"
+                    cp -u "$deb_file" "$PKG_DIR/"
+                else
+                    echo -e "${YELLOW}  La versión actual $current_ver ≥ $pkg_ver. No se integrará.${WHITE}"
+                    echo "No incluido: $pkg_name $pkg_ver (actual: $current_ver)" >> "$LOG_FILE"
+                fi
+            else
+                echo -e "${YELLOW}  No se encontró archivo .deb en $repo_name${WHITE}"
+                echo "No se generó archivo .deb" >> "$LOG_FILE"
+            fi
+        else
+            echo -e "${YELLOW}  No se encontró script de build en $repo_name${WHITE}"
+            echo "No se encontró ./build ejecutable" >> "$LOG_FILE"
         fi
     fi
 done
 
+cd "$BASENAME"
+
+# Incluir en reprepro los .deb generados
+for deb in "$PKG_DIR"/*.deb; do
+    [[ -f "$deb" ]] || continue
+    pkg_name=$(dpkg-deb -f "$deb" Package)
+    echo -e "${WHITE}→ Actualizando paquete $pkg_name en el repositorio${WHITE}"
+    sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" remove "$DISTRO" "$pkg_name" 2>/dev/null || true
+    if sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" includedeb "$DISTRO" "$deb"; then
+        echo -e "${GREEN}  $pkg_name incluido en reprepro${WHITE}"
+        echo "Incluido en reprepro: $pkg_name" >> "$LOG_FILE"
+    else
+        echo -e "${RED}  Error al incluir $pkg_name${WHITE}"
+        echo "Error al incluir $pkg_name" >> "$LOG_FILE"
+    fi
+done
+
+# Exporta índices
 if ! sudo -u "$SUDO_USER" reprepro -b "$REPO_DIR" export; then
-    echo "Error exporting indexes"
+    echo -e "${RED}Error al exportar índices${WHITE}"
+    echo "Error al exportar índices" >> "$LOG_FILE"
+else
+    echo -e "${GREEN}Índices exportados correctamente${WHITE}"
+    echo "Índices exportados correctamente" >> "$LOG_FILE"
 fi
 
-chown -R $SUDO_USER:$SUDO_USER plurios/
-chown -R $SUDO_USER:$SUDO_USER tmp/
+# Permisos
+chown -R "$SUDO_USER:$SUDO_USER" "$REPO_DIR" "$BASE_DIR"
+
+echo -e "${GREEN}Repositorio actualizado correctamente en: $REPO_DIR${WHITE}"
+echo -e "${WHITE}Log generado: $LOG_FILE${WHITE}"
