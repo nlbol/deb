@@ -6,44 +6,44 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Thu, 26 Jun 2025 02:26:14 UTC
+Date: Wed, 02 Jul 2025 23:25:18 UTC
 Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
 MD5Sum:
- e8d6ce4e5f1d24f17ca28cc209cf2bd2 3912 main/binary-amd64/Packages
- fea29fe4b73467d3bdf1ca1f136b0ca0 1735 main/binary-amd64/Packages.gz
+ 613b9db5969c7298c1d6454adf283471 3920 main/binary-amd64/Packages
+ c63451431429e070b49cc5020fa31f11 1734 main/binary-amd64/Packages.gz
  e1b3eb03e12e68040fc81dc52517dea8 142 main/binary-amd64/Release
- d5f2ecbdf07a4ad78f639a23d8567737 1681 main/binary-i386/Packages
- ccd4f78c00b305cbcd6d535388e38578 814 main/binary-i386/Packages.gz
+ d31642b0091cb2baf5bb73d466d4379c 1685 main/binary-i386/Packages
+ 7b986332065d233a14f3edc2151cb041 818 main/binary-i386/Packages.gz
  035368ef1961034bc05a815376ee52c2 141 main/binary-i386/Release
 SHA1:
- dff114528eaac318e211887d7f68e3f065bd4072 3912 main/binary-amd64/Packages
- 71ed5ef31b3c34303c24f38dc3b9aaf985bd484a 1735 main/binary-amd64/Packages.gz
+ 1ff318361ba0b8208395c7937370e42cba327913 3920 main/binary-amd64/Packages
+ 8ed60df6718744aeb11bca3e3c46b2ad76b8e41f 1734 main/binary-amd64/Packages.gz
  f49552489ea3568ab5e3d5db450efbb1088c775d 142 main/binary-amd64/Release
- 96a990d7472e6f70f5bd7afc0e83b883fe25931c 1681 main/binary-i386/Packages
- 5de28096ab517433423e13919b1a104a042d8c43 814 main/binary-i386/Packages.gz
+ 7f3b6e35b79e36237ae1b4c767da76ffa5b6eb28 1685 main/binary-i386/Packages
+ 6f48a03fdc592d0bbce2e7d516fdb7c3bb00b9d0 818 main/binary-i386/Packages.gz
  d5634c1edb5b47aa1353ad322fc0d80e24586204 141 main/binary-i386/Release
 SHA256:
- 1f4bd05f99c1b297adaa451f9b05e2a65e438b7ac90c3fc10de6bf746640dd09 3912 main/binary-amd64/Packages
- 2f63fe8e57a4368f96180d5bd2bf2b2a17a4567e528d1e757d26e6a278043313 1735 main/binary-amd64/Packages.gz
+ 13200dd8b56a892b5ad474e8e775a4919e6e28da14d3396249606188da9a3a9c 3920 main/binary-amd64/Packages
+ 72a1c558993a81a905c2249ea745aa413e9cfb375962c537fdfc558e37ac030f 1734 main/binary-amd64/Packages.gz
  9b8cea2409d92e6af57b3ce936a9bde42e4b2dd205aca9345b48dc3dd84744ea 142 main/binary-amd64/Release
- 5db91ebbad2bb1df4308a2351b024e6ff594fce84f87315430e128686b9c1751 1681 main/binary-i386/Packages
- cddc761302527ad78d2bfb998086a7a61e4f1f4fe17e1c1e7e81dd9f13abb836 814 main/binary-i386/Packages.gz
+ 12a9684c031813e713cdc128ee100c525463053f3ca52ef8da798f904599a054 1685 main/binary-i386/Packages
+ 65d5da0e5b5a0140684128ecb3442d52e03506000d4da6afbb4f82b5be78285c 818 main/binary-i386/Packages.gz
  cb75cbd808e76897900b7c080a564279acb1dbd050b0ff80aae920e4e8c6f6d9 141 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmhcr8YACgkQw2AmWb0P
-WnPDrw/+OThg9vNOcjhtQJ8D4b9AoLxwSTF8ih5fSX352/nz6Mf8cDGlLAaCSmvX
-FLDEB1JIi5QNbpXJOKwwysmkzR6K1I8MwvGwMy9qd21eOr0qVugJrBjEOuoD6lpE
-F62KgBQs9F7gb7bk7iQ5lvOKXRgsGPEOCCG5jkqyzOc2x5TUVckT6+xvQlhShrFi
-BtzRvj6dHDmeNdO93hw/ocPJ4ZoENQGBQdn3nfArgmEXJzaDT3tgdXca7T01EJMH
-rL5wmz7dUMXJ2dLsVlcPz8pPoB2qPaka/742oe3dUCDBkQEtkKGroY8awtyneTnt
-DcuPO4rSAeBQBIZ+CCMT2o8BgkUCB+EHF7d1hdhZ9nCZ+V8TvFcS+ErrldPV3V0T
-euB8bdek0+vvmFUGJAD6jPD1f0pi0JGmOM0Pu4+ZEuhlrUqObHBJUAtBDefJE4bg
-lBxCLMWxz0pjBU3vaAs2vW0Ra77/77iqNov+tUPjcL0MLWIirKfcJmF4ir6+Q9cF
-o8uOKAVdUlZWHb1MshLHLwYYQSuzrK60KQnkDXGLk82Dxb8adEnZZFnsGfuWnmhT
-wCX6LuNXGb3Ll3kA1zpnxEK5vmtWbwnHCtNM1szWYeNuBj5elrRjPfcm/7zYLOMQ
-YJT6JJslIhNfKqxn8W4YeGLG27K/voHoKgekn0Kj6DC2LQuu9dk=
-=wfb/
+iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmhlv98ACgkQw2AmWb0P
+WnOdpg//WlafImK4zBq5S6m1vm1vRSg2K2dxlAfLJHy8qTI3yG55IfFmfTQ/xcjO
+pIQ2akori73R0ag5vRtyuAro3oI8hL1KsKn0E1pG5mZfr5X3uhz1tLuqe2z4DfqB
+TtIqOhgwUhE9INCrD1OSCCbV0UK5/i2WwtVd+7zqLHXUWwgfEW5qkAvZmC9iganV
+pKOhF0/+I1Qgb9qTZ9fGkaEdLyzKSpQegWFJHB3P0AoxTiVwgSrWNJ3qiWQ/8Nc8
+/iuDaoiW4XRELTVLEoZRbSMnIZIjYCGuQqx2ZF2LSzxSPiDrrcTIFutNkCiAUVNr
+p3ldFJzrbWN0KRVLgcdRPix1lqMm9rPKB+ha8oE0kc7u2agLjUmSmPYVwe9DwGk8
+AbdK2Skylft638fDC9e7LS0Vv05PaUoPR0zVkl9enr3kjpcGfYNl7NjMuOZmkSlN
+1Hy7tHhYVnIG0lxuFWThhv2eFjfVgh3jSTSlED7MU9t+KGqDW7jvW+YgrIft8xNy
+VBBwdtRwCQ2oRf3693i3Qxxq0cgkJREMLWMl6sf49KnC5mSpywpwHFVWGqzclrVo
+ImVSllvvhQbwDjMA0P7jRSgqu4fF7DIv+pNJT5NDB+AeR+1Vqci5KMjNLMsS3Weu
+iDnpa8fIRcz4BehUx4PA7Xy9KLZld0LOndlUUZcO10u1Oof76lE=
+=uP4k
 -----END PGP SIGNATURE-----

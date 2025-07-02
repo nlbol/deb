@@ -1,6 +1,6 @@
 Package: plurios-calamares-settings
 Source: calamares-settings-ubuntu
-Version: 0.4
+Version: 1.0.0
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Installed-Size: 1280
@@ -10,11 +10,11 @@ Provides: calamares-settings-ubuntu-flavor
 Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubuntu
 Priority: optional
 Section: devel
-Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_0.4_all.deb
-Size: 720956
-SHA256: 9e4203f8232203ff14d8b62da0c24096ab32a69604dc6fdb96c2070127c5eff7
-SHA1: fb63b7c735a156c1f1bafcc76b75e4da3e993afb
-MD5sum: 3fbfe97489f47a032c4dc40f408d8a5e
+Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.0_all.deb
+Size: 720952
+SHA256: 68af58dd71995f6877e18e9bbecf3bb19637e6a9489545a7596acf929eb7803d
+SHA1: 7e8169f389dc72125825dab5523a0b8d15377ede
+MD5sum: bebeb32f2b04f5261e459e03189e2d9d
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
