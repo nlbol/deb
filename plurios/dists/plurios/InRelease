@@ -6,44 +6,44 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Wed, 02 Jul 2025 23:25:18 UTC
+Date: Thu, 03 Jul 2025 00:37:57 UTC
 Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
 MD5Sum:
- 613b9db5969c7298c1d6454adf283471 3920 main/binary-amd64/Packages
- c63451431429e070b49cc5020fa31f11 1734 main/binary-amd64/Packages.gz
+ 90d7b8e5afcb0a0b5bee1326532881ff 3924 main/binary-amd64/Packages
+ e70af70286f27a0b3741e9f5054beed2 1726 main/binary-amd64/Packages.gz
  e1b3eb03e12e68040fc81dc52517dea8 142 main/binary-amd64/Release
- d31642b0091cb2baf5bb73d466d4379c 1685 main/binary-i386/Packages
- 7b986332065d233a14f3edc2151cb041 818 main/binary-i386/Packages.gz
+ d0067b2cea8d9ce37c83f96fff19292a 1689 main/binary-i386/Packages
+ 22694f66f238770d27a4266a775439ed 814 main/binary-i386/Packages.gz
  035368ef1961034bc05a815376ee52c2 141 main/binary-i386/Release
 SHA1:
- 1ff318361ba0b8208395c7937370e42cba327913 3920 main/binary-amd64/Packages
- 8ed60df6718744aeb11bca3e3c46b2ad76b8e41f 1734 main/binary-amd64/Packages.gz
+ a27a13c9fbac3fde0e2a5877b31841cd5479f1cf 3924 main/binary-amd64/Packages
+ 028eda9ef991e57d3777d54afe86287721a0afb3 1726 main/binary-amd64/Packages.gz
  f49552489ea3568ab5e3d5db450efbb1088c775d 142 main/binary-amd64/Release
- 7f3b6e35b79e36237ae1b4c767da76ffa5b6eb28 1685 main/binary-i386/Packages
- 6f48a03fdc592d0bbce2e7d516fdb7c3bb00b9d0 818 main/binary-i386/Packages.gz
+ 34c4bdb153abf1b8e017502d9e321ec12a185588 1689 main/binary-i386/Packages
+ 0a275dc52e31da4f7974c311495154ff19d8a5d4 814 main/binary-i386/Packages.gz
  d5634c1edb5b47aa1353ad322fc0d80e24586204 141 main/binary-i386/Release
 SHA256:
- 13200dd8b56a892b5ad474e8e775a4919e6e28da14d3396249606188da9a3a9c 3920 main/binary-amd64/Packages
- 72a1c558993a81a905c2249ea745aa413e9cfb375962c537fdfc558e37ac030f 1734 main/binary-amd64/Packages.gz
+ 8bd96a0e057c85794079b62bde14fd2532d6e160d041e2003c75b987c1332a70 3924 main/binary-amd64/Packages
+ 055c1ddbc1116bf4163d4fe4c8047af47ef635dd66364be335d9e55fde8174fa 1726 main/binary-amd64/Packages.gz
  9b8cea2409d92e6af57b3ce936a9bde42e4b2dd205aca9345b48dc3dd84744ea 142 main/binary-amd64/Release
- 12a9684c031813e713cdc128ee100c525463053f3ca52ef8da798f904599a054 1685 main/binary-i386/Packages
- 65d5da0e5b5a0140684128ecb3442d52e03506000d4da6afbb4f82b5be78285c 818 main/binary-i386/Packages.gz
+ 9c71849d60bd88519c3775beef6bba229bd01a2e66fce43b078b492b73d3756a 1689 main/binary-i386/Packages
+ 03ca1065b5fa5296bc17f87525825d11fa38f5f62b2a833ddc03f4476720f849 814 main/binary-i386/Packages.gz
  cb75cbd808e76897900b7c080a564279acb1dbd050b0ff80aae920e4e8c6f6d9 141 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmhlv98ACgkQw2AmWb0P
-WnOdpg//WlafImK4zBq5S6m1vm1vRSg2K2dxlAfLJHy8qTI3yG55IfFmfTQ/xcjO
-pIQ2akori73R0ag5vRtyuAro3oI8hL1KsKn0E1pG5mZfr5X3uhz1tLuqe2z4DfqB
-TtIqOhgwUhE9INCrD1OSCCbV0UK5/i2WwtVd+7zqLHXUWwgfEW5qkAvZmC9iganV
-pKOhF0/+I1Qgb9qTZ9fGkaEdLyzKSpQegWFJHB3P0AoxTiVwgSrWNJ3qiWQ/8Nc8
-/iuDaoiW4XRELTVLEoZRbSMnIZIjYCGuQqx2ZF2LSzxSPiDrrcTIFutNkCiAUVNr
-p3ldFJzrbWN0KRVLgcdRPix1lqMm9rPKB+ha8oE0kc7u2agLjUmSmPYVwe9DwGk8
-AbdK2Skylft638fDC9e7LS0Vv05PaUoPR0zVkl9enr3kjpcGfYNl7NjMuOZmkSlN
-1Hy7tHhYVnIG0lxuFWThhv2eFjfVgh3jSTSlED7MU9t+KGqDW7jvW+YgrIft8xNy
-VBBwdtRwCQ2oRf3693i3Qxxq0cgkJREMLWMl6sf49KnC5mSpywpwHFVWGqzclrVo
-ImVSllvvhQbwDjMA0P7jRSgqu4fF7DIv+pNJT5NDB+AeR+1Vqci5KMjNLMsS3Weu
-iDnpa8fIRcz4BehUx4PA7Xy9KLZld0LOndlUUZcO10u1Oof76lE=
-=uP4k
+iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmhl0OUACgkQw2AmWb0P
+WnMKcQ/+JZYOzJZyn01T/6diPV9+VB0HL+NPM2sK0XOIAEUVgTDMUw+fkp7CWyo1
+kOnwlIqJ4vDLgKUA5CbYjc1wXpFPUSGS4rFr8BFkgNigchYWFB+rP/1j0GBSQzvI
+ySA49RHvgiYJlSblBhSqeprica9zlyck7amSOFxpWz550GRatxtOtgBBu2/Dv6Ev
+6IxFuif2cooty+6JLPY6XdRWQAkMs9BYrkMTradiui4qleeitD32xCnzJD3bMlMo
+Min9JWHrnywDph5b9oMlt1p0YTxC02cn1xsKEpxQnqOUj1Kz/ZVfPjdTepbxw0mI
+IN68qC4IefLrnHOY8wuRJ8rQE9gRQdyCJrdC8SxCrN4GwXOlsCvslqB1DbgUuo26
+hd/sbcx25WcWAnsC2+Pe5kL5l405h3cn2sqcEPPIdMGsKbBgroIa5W5a6eSBRWeR
+6HF6vEhzXgQnMxaw3rYrOxsd3fT3xShXjrcWcKN9yHe56zL4O38PTAjDMKG4THlM
+ofrZDbfMh4l0+0YtUwWIkUq+UWAui86ElM9tBe3f1eyuewe/2zJtyls2JshES/Kn
+pHGrlo7HUxeq3eYr5b+ezNFf8JDddTzPPnbCTfgzGGjYLQwyn01ErF35YhqltYNh
+9xK+D5n0Rshvjk7lHJsgRQyZStKKL0b+91MERRTxOxOiQM20uDI=
+=anGX
 -----END PGP SIGNATURE-----

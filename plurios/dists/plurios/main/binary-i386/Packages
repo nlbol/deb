@@ -21,7 +21,7 @@ Description: PluriOS Calamares Settings and Branding
 
 Package: plurios-plymouth-theme-spinner
 Source: ubuntucinnamon-artwork
-Version: 0.1
+Version: 1.0.0
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Original-Maintainer: Joshua Peisach <itzswirlz2020@outlook.com>
@@ -32,11 +32,11 @@ Replaces: plymouth (<< 0.8.1-1~)
 Provides: plymouth-theme
 Priority: optional
 Section: x11
-Filename: pool/main/u/ubuntucinnamon-artwork/plurios-plymouth-theme-spinner_0.1_all.deb
-Size: 120056
-SHA256: 67fffa9a2869e7b05720fcc8e2d25cbbcb6b5da479ba229e88a6cf5204e02590
-SHA1: e50f2986aaaf03de1c3d84fac3a0a3936b0c5af2
-MD5sum: 928a948d64c829b72fc44f3c0dbe161c
+Filename: pool/main/u/ubuntucinnamon-artwork/plurios-plymouth-theme-spinner_1.0.0_all.deb
+Size: 120032
+SHA256: 43b5cf47a9ddd1571ed1fc8670ba2f7cec97ec2d4e79812c33c29f55109e3a27
+SHA1: e3756b8f4ce93460358440a720764ffb88b4ef0f
+MD5sum: 2668406afa79b42579fd5602483427d3
 Description: boot animation for PluriOS
  .
  This package contains the spinner theme.
