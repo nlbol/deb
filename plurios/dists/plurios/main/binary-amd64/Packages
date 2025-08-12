@@ -18,7 +18,7 @@ Description: A desktop app for generating
 
 Package: plurios-calamares-settings
 Source: calamares-settings-ubuntu
-Version: 1.0.0
+Version: 1.0.1
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Installed-Size: 1280
@@ -28,11 +28,11 @@ Provides: calamares-settings-ubuntu-flavor
 Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubuntu
 Priority: optional
 Section: devel
-Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.0_all.deb
-Size: 720952
-SHA256: 68af58dd71995f6877e18e9bbecf3bb19637e6a9489545a7596acf929eb7803d
-SHA1: 7e8169f389dc72125825dab5523a0b8d15377ede
-MD5sum: bebeb32f2b04f5261e459e03189e2d9d
+Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.1_all.deb
+Size: 720936
+SHA256: 530d9079ea31c3365a5c2a13410ac519800580b17d979078d370dcdc43651ee7
+SHA1: 29f2b6a6fc4ffa99498ce2defca037001e38ca39
+MD5sum: dbe09a8b56accc9eafb11537353d27bd
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
