@@ -3,27 +3,27 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Tue, 12 Aug 2025 22:07:56 UTC
+Date: Sat, 13 Sep 2025 00:18:30 UTC
 Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
 MD5Sum:
- 382a179e64516f9e7b30a29bcaa0bb27 3924 main/binary-amd64/Packages
- d100c1f8e3771e85b3f1058c65c67316 1728 main/binary-amd64/Packages.gz
+ ddac9b37190d9be1b7fc1809bd4a6818 3926 main/binary-amd64/Packages
+ 50395f19a367c12f3e4261fa96a15f02 1728 main/binary-amd64/Packages.gz
  e1b3eb03e12e68040fc81dc52517dea8 142 main/binary-amd64/Release
  966c57299e42db5fd45fdda848d3110e 1689 main/binary-i386/Packages
  78115955d965c692af4390e32ef64ba1 816 main/binary-i386/Packages.gz
  035368ef1961034bc05a815376ee52c2 141 main/binary-i386/Release
 SHA1:
- c3dfb0131bc3c72fd4fc94995b2d70771c923024 3924 main/binary-amd64/Packages
- 1cea33730620417474164daa050efe1994124b45 1728 main/binary-amd64/Packages.gz
+ 096aac820d3bee9a476fa1c6f67adf8053ff55cb 3926 main/binary-amd64/Packages
+ d81e2bd8a8b91f027b6130dfe11363f17c3c980e 1728 main/binary-amd64/Packages.gz
  f49552489ea3568ab5e3d5db450efbb1088c775d 142 main/binary-amd64/Release
  537139bbc49c1fdc5f700db6c84ab834797c808a 1689 main/binary-i386/Packages
  0e03f6a9a1bcfa6ceda1b832e5dc07996a99cf96 816 main/binary-i386/Packages.gz
  d5634c1edb5b47aa1353ad322fc0d80e24586204 141 main/binary-i386/Release
 SHA256:
- b2527389bf16a1d2652a29413bab3904f00dc1b345f01d650f4770fb4652f152 3924 main/binary-amd64/Packages
- 231a350e58450ce4da081eaaf35478eab4ac07dd64fd650cfa2ab59296a3362b 1728 main/binary-amd64/Packages.gz
+ 6189ef9586bf17e47742d46cc0a2500adb3afb591ac7bafff215344e419f5345 3926 main/binary-amd64/Packages
+ 426502356ad00eb37989b809f0a1327fd5d5ead58d3ae82af16480aab137e73e 1728 main/binary-amd64/Packages.gz
  9b8cea2409d92e6af57b3ce936a9bde42e4b2dd205aca9345b48dc3dd84744ea 142 main/binary-amd64/Release
  72930b3654b0c8528db399562396c412abe0b4ddb221cd3bcbe806719af70aca 1689 main/binary-i386/Packages
  4d35e79b88ca8d93a75852a2c73360d768a5ae784868fb80abc18a5499e39b49 816 main/binary-i386/Packages.gz
