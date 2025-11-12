@@ -6,7 +6,7 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Wed, 12 Nov 2025 12:59:01 UTC
+Date: Wed, 12 Nov 2025 15:47:40 UTC
 Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
@@ -33,17 +33,17 @@ SHA256:
  cb75cbd808e76897900b7c080a564279acb1dbd050b0ff80aae920e4e8c6f6d9 141 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmkUhJUACgkQw2AmWb0P
-WnNk9g//eTuK6BwFQZMWKSFIaf92Lb2No/CZr+EApX5KO2sXYU+XtuJxKJltKJ0z
-lxxoQf9EDJdQa2/xp2N5BoZvm18/i8EAcW5iMUAMbGadOnG87z1+b8xxZAFF3jms
-c9laxYWeF7jyO5Jt+aoBM94fMhzyOt+HlpOrw6eRLxwaJQrCgX3udDFZq6PvNoy9
-QCTDmgDIozvipxeBuJMeXzbLQS12e+5Ec++mo1YrM+W3p9p2ajQL75eTkPw9nYpp
-9hQsErJTlybeZnernwuPjlyFz4+JllFL0xAKnd43rABBQ5e09FHK+GxM+/xmzPzY
-LanMX6dzqjCiyUUvlbY7BayGHv5DeCWUnaNOEqNBlLd4bNnYlnMrAzwhiTj1fw9s
-2mgluahxR95oT8hDHC4Xh6HB70krg4wG/1EvImywHruyODUmd9qDkfmgnx9p/YTW
-wrDZleLD5COl17T+ma8u66y/Hb39aceB9i9q+D1GljFv15pQc0WdZZ1JXICkttIA
-j5gBheQE6WaXIHNe2qnONKcLTnKePN2yo0SETpu/RnscqwdgCrFStscZ2LLBP5/T
-uNhdl0wNhOo0pDBseG8mD3JBMXWMKYGkhTFLO2+nnajAy1Zv46glb5dKAC4O72aT
-3mOJ0hHZE7BXc8KcmNmujve2uy8v6nA+o47rxpMwIEaqPY2Zg80=
-=79D+
+iQIzBAEBCgAdFiEE9FKbJoX25rHnRl/tw2AmWb0PWnMFAmkUrBwACgkQw2AmWb0P
+WnMlWA/5AVf0ozDZ3jglO1Dkm+xbsdOK5sWoCBNLc3w3gllirxmYKSoR6LL8pDfC
+gF/3N0DS2JUcQjVZXDlmBrfE5oCNqZ4fEO81x6zTAIfM7+BarCiqZQY7QfKpwhzQ
+Utd8RW1FEUMjr0O9BlGkXzApguz6unCftIZpcDwTYOP73E99vaPkKVf2F0cNuK/8
+payP8sn8rpOtjh55X9+CVi68Zu+mnr5BGRSWT2jfENzoVNQXxPjleruWW+YZOYq1
+qUJRWXygwlCW3tivsfQPhzRUz5Q68oIuJqOFzuJFS5+R6hJQzWybroSiRkUU5Dud
+nhukdlC0HZMEyclM1B1eEfowNHNefj88Uu/SJBwzzyj61d9/tv7JXs6TRyqheZrF
+Ly09T0m5VzQfclr/84vUhpjSxSfT5GK0LHFucIKd8GOyAUs+8s6X6yc37MjfJZQL
+CUjXutxiSgReX8n8MRPut7sMAmPtitnMAKMYO1K25B4A1RxWhY4Wksd4zMKXPnR+
+o7uMEQ6vdny19uMGxRZ9qDi3V7TIQCpK2qllfbpf2qHdha5YI6g6CuxgMsUzfE3Y
+YGmBoK4sUI5pTfvh1ajPv5UdxAK0MXlD0lLW3sg7xidWNeasZY7Ifz5n6Zou/gpK
+C1roRsS45NqDLoycBHrCVuV/+SiL9x49tbuFMnuGQyadV1ZwraM=
+=sUuG
 -----END PGP SIGNATURE-----

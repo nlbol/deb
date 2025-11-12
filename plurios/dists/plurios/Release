@@ -3,7 +3,7 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Wed, 12 Nov 2025 12:59:01 UTC
+Date: Wed, 12 Nov 2025 15:47:40 UTC
 Architectures: amd64 i386
 Components: main
 Description: PluriOS Repository
