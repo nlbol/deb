@@ -1,24 +1,24 @@
 Package: avda
 Homepage: https://github.com/FershoUno/avda
-Version: 1.11.0
+Version: 1.12.1
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Architecture: amd64
-Installed-Size: 8632
+Installed-Size: 8612
 Copyright: GPL-3.0
 Priority: optional
 Section: misc
-Filename: pool/main/a/avda/avda_1.11.0_amd64.deb
-Size: 2790052
-SHA256: df43058b9ad6d39b236aa20f44175a79dad6c4f2887cf2fd6412bbc11ed2b8fd
-SHA1: 830273b1e32eea0f8b4f83d2a16a796c6823de00
-MD5sum: bae823c2e7bda1591a0892b6163e4747
+Filename: pool/main/a/avda/avda_1.12.1_amd64.deb
+Size: 2793488
+SHA256: 86188af1e654806a43e3f83c6b4907cd2c18bdc0c30ad1722b64ee8a0846bbd8
+SHA1: 5d6075fdabd1584fb98f6581c4736fbdb19c75c5
+MD5sum: 62c3f9ec9d0b50ae54d0f7ff9d7e4ce0
 Description: A desktop app for generating 
  and viewing one-time passwords from Aegis 
  Authenticator backups.
 
 Package: plurios-calamares-settings
 Source: calamares-settings-ubuntu
-Version: 1.0.1
+Version: 1.0.2
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Installed-Size: 1280
@@ -28,11 +28,11 @@ Provides: calamares-settings-ubuntu-flavor
 Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubuntu
 Priority: optional
 Section: devel
-Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.1_all.deb
+Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.2_all.deb
 Size: 720936
-SHA256: 530d9079ea31c3365a5c2a13410ac519800580b17d979078d370dcdc43651ee7
-SHA1: 29f2b6a6fc4ffa99498ce2defca037001e38ca39
-MD5sum: dbe09a8b56accc9eafb11537353d27bd
+SHA256: a5846d2254ccfa5affc9d3aee840a9b8050f538831a096671c58bb2e5ac085f7
+SHA1: f0d5fb8bacc0408bacc55b1d965e8cf0aab6b89f
+MD5sum: 4b5065dff42fa34a07f3d80e5f0a630f
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
