@@ -11,10 +11,10 @@ Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubu
 Priority: optional
 Section: devel
 Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.2_all.deb
-Size: 720936
-SHA256: a5846d2254ccfa5affc9d3aee840a9b8050f538831a096671c58bb2e5ac085f7
-SHA1: f0d5fb8bacc0408bacc55b1d965e8cf0aab6b89f
-MD5sum: 4b5065dff42fa34a07f3d80e5f0a630f
+Size: 720932
+SHA256: 57bc60ecef61374d51565353190b7200ed56a83abe8cbcc39267a1effc57d12a
+SHA1: 045f80e35196334f2614c734c2b136805506b541
+MD5sum: 0e188420ec5ea453ed69c3e8059356c7
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
@@ -33,10 +33,10 @@ Provides: plymouth-theme
 Priority: optional
 Section: x11
 Filename: pool/main/u/ubuntucinnamon-artwork/plurios-plymouth-theme-spinner_1.0.0_all.deb
-Size: 120032
-SHA256: 43b5cf47a9ddd1571ed1fc8670ba2f7cec97ec2d4e79812c33c29f55109e3a27
-SHA1: e3756b8f4ce93460358440a720764ffb88b4ef0f
-MD5sum: 2668406afa79b42579fd5602483427d3
+Size: 120044
+SHA256: 87a6d4cc49e7a1772b1e13b3a43b0cc98dc69009bd281e9128430ac2945bef2c
+SHA1: bd11bbf15c18fe5bb31090c70f9f00cbb14a395d
+MD5sum: 58d97a3aa342a562d2ad197b5615efee
 Description: boot animation for PluriOS
  .
  This package contains the spinner theme.

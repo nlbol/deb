@@ -8,10 +8,10 @@ Copyright: GPL-3.0
 Priority: optional
 Section: misc
 Filename: pool/main/a/avda/avda_1.12.1_amd64.deb
-Size: 2793488
-SHA256: 86188af1e654806a43e3f83c6b4907cd2c18bdc0c30ad1722b64ee8a0846bbd8
-SHA1: 5d6075fdabd1584fb98f6581c4736fbdb19c75c5
-MD5sum: 62c3f9ec9d0b50ae54d0f7ff9d7e4ce0
+Size: 2792280
+SHA256: 2e6618ee7df7e9a4c4233afc83e9596e1c642e452187cfa25e6f5fa75bf1fca1
+SHA1: ba9161bb6be57bf9e289c29123bdea01927ec82e
+MD5sum: 933188d09d8440977860f6f4c948d7ed
 Description: A desktop app for generating 
  and viewing one-time passwords from Aegis 
  Authenticator backups.
@@ -29,10 +29,10 @@ Homepage: https://code.launchpad.net/~ubuntu-qt-code/+git/calamares-settings-ubu
 Priority: optional
 Section: devel
 Filename: pool/main/c/calamares-settings-ubuntu/plurios-calamares-settings_1.0.2_all.deb
-Size: 720936
-SHA256: a5846d2254ccfa5affc9d3aee840a9b8050f538831a096671c58bb2e5ac085f7
-SHA1: f0d5fb8bacc0408bacc55b1d965e8cf0aab6b89f
-MD5sum: 4b5065dff42fa34a07f3d80e5f0a630f
+Size: 720932
+SHA256: 57bc60ecef61374d51565353190b7200ed56a83abe8cbcc39267a1effc57d12a
+SHA1: 045f80e35196334f2614c734c2b136805506b541
+MD5sum: 0e188420ec5ea453ed69c3e8059356c7
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
@@ -46,10 +46,10 @@ Installed-Size: 780
 Priority: optional
 Section: misc
 Filename: pool/main/p/plurios-grub-theme-oit/plurios-grub-theme-oit_1.0.0_amd64.deb
-Size: 569896
-SHA256: 352bf95e535866cf0cbd6b5770c4dd93abd0eb7d16e96f43ffc096087aa99c51
-SHA1: 30e2a4f333c1151bc2ecb764433215cda350e2e1
-MD5sum: 4e66f913f5d12bff3d4a153c3d370233
+Size: 569912
+SHA256: 0b45bdb6271585f122f3b0a5b3b9900de35620562f1ca3425d12457030f0181c
+SHA1: e51f018eefaafea826a8eef95b87c31bd5de36e1
+MD5sum: fc97c9cffc17ef037b495f35cdb6adff
 Description: Tema simple para Grub de PluriOS
   Fork del tema "virtual_future_grub_theme"
   repositorio actual RomjanHossain/Grub-Themes.
@@ -62,10 +62,10 @@ Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Priority: optional
 Section: misc
 Filename: pool/main/p/plurios-icons/plurios-icons_1.0.0_amd64.deb
-Size: 341980
-SHA256: 369bfbe8aa0860d2140e43df8ce7f30a04949870c62cba39412b93d029899e54
-SHA1: 558fba0d685ede5cab5d808e297d5d7ad8e2b867
-MD5sum: f83df255ba6c11730668d65c6e897c5d
+Size: 341988
+SHA256: ef38869ae562cb2249595bf17c3391674ef7a54ae07be6e50c43ed46c54b74c6
+SHA1: bd339c1ec6d4887fa016a4d82e488b7014d77182
+MD5sum: 2b1ff35cb89df4dfe496e025013a9ce9
 Description: paquete de iconos de PluriOS.
 
 Package: plurios-plymouth-theme-spinner
@@ -82,16 +82,16 @@ Provides: plymouth-theme
 Priority: optional
 Section: x11
 Filename: pool/main/u/ubuntucinnamon-artwork/plurios-plymouth-theme-spinner_1.0.0_all.deb
-Size: 120032
-SHA256: 43b5cf47a9ddd1571ed1fc8670ba2f7cec97ec2d4e79812c33c29f55109e3a27
-SHA1: e3756b8f4ce93460358440a720764ffb88b4ef0f
-MD5sum: 2668406afa79b42579fd5602483427d3
+Size: 120044
+SHA256: 87a6d4cc49e7a1772b1e13b3a43b0cc98dc69009bd281e9128430ac2945bef2c
+SHA1: bd11bbf15c18fe5bb31090c70f9f00cbb14a395d
+MD5sum: 58d97a3aa342a562d2ad197b5615efee
 Description: boot animation for PluriOS
  .
  This package contains the spinner theme.
 
 Package: rustdesk
-Version: 1.4.0
+Version: 1.4.3
 Architecture: amd64
 Maintainer: rustdesk <info@rustdesk.com>
 Homepage: https://rustdesk.com
@@ -99,10 +99,10 @@ Depends: libgtk-3-0, libxcb-randr0, libxdo3, libxfixes3, libxcb-shape0, libxcb-x
 Recommends: libayatana-appindicator3-1
 Priority: optional
 Section: net
-Filename: pool/main/r/rustdesk/rustdesk_1.4.0_amd64.deb
-Size: 20535640
-SHA256: e7bfd8f0a59e151962b349eecd1ec90d0a0bae38b985745f80a32530ae465f95
-SHA1: a8ee28fdedf0c3271c3133608268026f29c8994b
-MD5sum: df0d21838841e58f466a88f614943ef6
+Filename: pool/main/r/rustdesk/rustdesk_1.4.3_amd64.deb
+Size: 21372488
+SHA256: 084013ed7f619ab7b8cb0fdaf5b24e2b00e773bf3de31d4a365a97879891fedb
+SHA1: 835b159b73aece60c48197c368b6463725fcaf16
+MD5sum: 65c575da81c9867b2cb495fd78c2e758
 Description: A remote control software.
 
