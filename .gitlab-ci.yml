@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  script:
+    - rm -rf public
+    - mkdir -p public
+    - cp -r * .[^.]* public/ || true
+
+  artifacts:
+    paths:
+      - public
