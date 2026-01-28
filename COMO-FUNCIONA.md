@@ -25,4 +25,4 @@ flowchart TD
     G2 --> H
     G3 --> H
 
-    H --> I[nlbol.github.io/deb/plurios]    
+    H --> I[repo.plurios.openit.dev]    
