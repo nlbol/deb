@@ -3,28 +3,28 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Wed, 12 Nov 2025 16:40:22 UTC
+Date: Thu, 29 Jan 2026 13:58:15 UTC
 Architectures: amd64 i386
 Components: main
 Description: Repositorio de paquetes de PluriOS
 MD5Sum:
- b8b64282da7143dc5d462b09075fe026 3926 main/binary-amd64/Packages
- 21c05e0b71916eea223041a837f964cd 1729 main/binary-amd64/Packages.gz
+ 27a30fb254b541cf9c85e370e8472e0f 3926 main/binary-amd64/Packages
+ 947d101bd44cd74ae351096cd31acd5d 1726 main/binary-amd64/Packages.gz
  0ffc579cba6c65109135d673163959eb 158 main/binary-amd64/Release
- f6e7f33adc85a8261b4bcfc00ca76468 1689 main/binary-i386/Packages
- 3c6c4cbfeac36b89025ece96dbbb7c4b 816 main/binary-i386/Packages.gz
+ 08f03d98d54fa5be1d683d167d754734 1689 main/binary-i386/Packages
+ 605d8bf9707b7b0a1315506abed74403 816 main/binary-i386/Packages.gz
  5979bede0109744e79e42847d6073086 157 main/binary-i386/Release
 SHA1:
- b832cfa7ee63a363d1cc69d23d239ead28d69bc9 3926 main/binary-amd64/Packages
- b86d78e395f2de512a5abb96eb9f91c8ae7fa274 1729 main/binary-amd64/Packages.gz
+ 2d04c5cbdb33ac2a0c2aa944cfb39d5e3b16e50a 3926 main/binary-amd64/Packages
+ 60c7cd663b177757ccf1cadc516684ff175f3194 1726 main/binary-amd64/Packages.gz
  85e0aa60660954f0be2b863af90cdab7e93148b1 158 main/binary-amd64/Release
- 1bf345cd58e69f06a441fffc1bbe3e0fe4b0af4d 1689 main/binary-i386/Packages
- 036c8af8cd5fc8a67648b5d8e6437a72640bc296 816 main/binary-i386/Packages.gz
+ 4ca78a5f49c0d7f395e0cc54c3112b8110b754e6 1689 main/binary-i386/Packages
+ 4761b97c696b941d20fd65019942d42571ea2990 816 main/binary-i386/Packages.gz
  18aafc4758220c4afb579ad490a37cd779563708 157 main/binary-i386/Release
 SHA256:
- 31296e8bbdd8bb64cddd38ff212c82e73cdd6920029d52aacb83949c769e6bca 3926 main/binary-amd64/Packages
- cc8d1f5138d45a28c855b9a6c0e3851660cf9eca7ebb1de4999c02793b5f3fa3 1729 main/binary-amd64/Packages.gz
+ f6474697e9019a482ccd95b09666fb44d98c17415297d8149a4d95c0c99d9c4c 3926 main/binary-amd64/Packages
+ e000051f00d635caeb7be3ce61be926e4f4f64aaba673226bbffc23e008d7594 1726 main/binary-amd64/Packages.gz
  716bdd845030821118268bc28cdf15b0649523be2e546f1f4fd8a1156d38c13c 158 main/binary-amd64/Release
- 0e52d0d9cfd770ee2ff79d1f43d6a4cf2e039dc09c5f9af2d4c0391721bab443 1689 main/binary-i386/Packages
- 4a10eaf3f008cea14dd32a10626c0245b9657a9490618c708a1190829b61dd0b 816 main/binary-i386/Packages.gz
+ a8c50a08a3f6145ffeda497f893be516c8e658c559151be0e4b471d8a0560605 1689 main/binary-i386/Packages
+ cd6b63e2ed7e9f2dc1539e4f110cba11d7c6ca43f7e9fb28c8e0c23d38aa456a 816 main/binary-i386/Packages.gz
  b3f767f8e68e4d11220fb9e3fa71fb58c5d611714d18fc0a736812334c08e869 157 main/binary-i386/Release
