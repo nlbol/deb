@@ -32,6 +32,7 @@ declare -a repos=(
 	"https://github.com/FershoUno/plurios-plymouth-theme-spinner"
 	"https://github.com/FershoUno/plurios-icons"
 	"https://github.com/FershoUno/rustdesk"
+	"https://github.com/FershoUno/plurios-firefox-profiles"
 )
 
 # Verifica permisos
@@ -123,6 +124,7 @@ for repo in "${repos[@]}"; do
         else
             echo -e "${YELLOW}  Sin cambios en $repo_name, build omitido${WHITE}"
             echo "Sin cambios. Build omitido." >> "$LOG_FILE"
+	    build_needed=true
         fi
     else
         echo -e "${GREEN}  Clonando nuevo repositorio...${WHITE}"

@@ -1,17 +1,17 @@
 Package: avda
 Homepage: https://github.com/FershoUno/avda
-Version: 1.12.1
+Version: 1.13.1
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Architecture: amd64
-Installed-Size: 8612
+Installed-Size: 8628
 Copyright: GPL-3.0
 Priority: optional
 Section: misc
-Filename: pool/main/a/avda/avda_1.12.1_amd64.deb
-Size: 2792280
-SHA256: 2e6618ee7df7e9a4c4233afc83e9596e1c642e452187cfa25e6f5fa75bf1fca1
-SHA1: ba9161bb6be57bf9e289c29123bdea01927ec82e
-MD5sum: 933188d09d8440977860f6f4c948d7ed
+Filename: pool/main/a/avda/avda_1.13.1_amd64.deb
+Size: 2798616
+SHA256: f96e020832674fae2dcbd881532005f461ce37788e7331a17dbed12af2449397
+SHA1: be69d6a424086d2a96059325d6e231b3f7f58889
+MD5sum: 1950bd06d5cf7846760c63eca0f9798e
 Description: A desktop app for generating 
  and viewing one-time passwords from Aegis 
  Authenticator backups.
@@ -36,6 +36,24 @@ MD5sum: 35576bf5e00c274b2094b55a0f2cbaae
 Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
+
+Package: plurios-firefox-profiles
+Version: 1.0.0
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Installed-Size: 96
+Homepage: https://github.com/FershoUno/plurios-firefox-profiles
+Priority: optional
+Section: web
+Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.0.0_all.deb
+Size: 7532
+SHA256: e239b4072f26f640f873cb3732efd6856cd7e0129bc4c2ca98bd0eaddf25f719
+SHA1: f6571af928765f26b96c1355865cf8956223af4a
+MD5sum: dd8a5f63f156338c1175f9a84765d8b8
+Description: PluriOS Firefox profiles
+  Meta package providing the default Firefox profile customization for PluriOS.
+  Forked from parrot-interface and modified to match PluriOS design, security
+  policies, and usability standards.
 
 Package: plurios-grub-theme-oit
 Version: 1.0.0
@@ -91,7 +109,7 @@ Description: boot animation for PluriOS
  This package contains the spinner theme.
 
 Package: rustdesk
-Version: 1.4.3
+Version: 1.4.5
 Architecture: amd64
 Maintainer: rustdesk <info@rustdesk.com>
 Homepage: https://rustdesk.com
@@ -99,10 +117,10 @@ Depends: libgtk-3-0, libxcb-randr0, libxdo3, libxfixes3, libxcb-shape0, libxcb-x
 Recommends: libayatana-appindicator3-1
 Priority: optional
 Section: net
-Filename: pool/main/r/rustdesk/rustdesk_1.4.3_amd64.deb
-Size: 21372488
-SHA256: 084013ed7f619ab7b8cb0fdaf5b24e2b00e773bf3de31d4a365a97879891fedb
-SHA1: 835b159b73aece60c48197c368b6463725fcaf16
-MD5sum: 65c575da81c9867b2cb495fd78c2e758
+Filename: pool/main/r/rustdesk/rustdesk_1.4.5_amd64.deb
+Size: 23060404
+SHA256: 6117ea2c2f5885830bff64b6b695b2596a2613dc35301539f19ae52747181c83
+SHA1: 6d26fe057c5a96e1c581bb80fa6719c561e93644
+MD5sum: c2d53dda06691e9c8687566b157c7f04
 Description: A remote control software.
 

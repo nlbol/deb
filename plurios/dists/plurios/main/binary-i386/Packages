@@ -19,6 +19,24 @@ Description: PluriOS Calamares Settings and Branding
  This package contains the Calamares settings and branding for PluriOS.
  As part of the branding the installer slideshow is contained within.
 
+Package: plurios-firefox-profiles
+Version: 1.0.0
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Installed-Size: 96
+Homepage: https://github.com/FershoUno/plurios-firefox-profiles
+Priority: optional
+Section: web
+Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.0.0_all.deb
+Size: 7532
+SHA256: e239b4072f26f640f873cb3732efd6856cd7e0129bc4c2ca98bd0eaddf25f719
+SHA1: f6571af928765f26b96c1355865cf8956223af4a
+MD5sum: dd8a5f63f156338c1175f9a84765d8b8
+Description: PluriOS Firefox profiles
+  Meta package providing the default Firefox profile customization for PluriOS.
+  Forked from parrot-interface and modified to match PluriOS design, security
+  policies, and usability standards.
+
 Package: plurios-plymouth-theme-spinner
 Source: ubuntucinnamon-artwork
 Version: 1.0.0

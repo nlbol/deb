@@ -6,44 +6,44 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Thu, 29 Jan 2026 13:58:15 UTC
+Date: Tue, 17 Feb 2026 19:53:16 UTC
 Architectures: amd64 i386
 Components: main
 Description: Repositorio de paquetes de PluriOS
 MD5Sum:
- 27a30fb254b541cf9c85e370e8472e0f 3926 main/binary-amd64/Packages
- 947d101bd44cd74ae351096cd31acd5d 1726 main/binary-amd64/Packages.gz
+ b8fc35e1cf9ccd43fed501cd0649ef1b 4645 main/binary-amd64/Packages
+ 11672be258d65b3fa342dd3b1cf385d3 1965 main/binary-amd64/Packages.gz
  0ffc579cba6c65109135d673163959eb 158 main/binary-amd64/Release
- 08f03d98d54fa5be1d683d167d754734 1689 main/binary-i386/Packages
- 605d8bf9707b7b0a1315506abed74403 816 main/binary-i386/Packages.gz
+ 57dbbe93a6223d049bfcfd02eb4583dc 2408 main/binary-i386/Packages
+ 707bd5cac44c10644554ef969b433950 1072 main/binary-i386/Packages.gz
  5979bede0109744e79e42847d6073086 157 main/binary-i386/Release
 SHA1:
- 2d04c5cbdb33ac2a0c2aa944cfb39d5e3b16e50a 3926 main/binary-amd64/Packages
- 60c7cd663b177757ccf1cadc516684ff175f3194 1726 main/binary-amd64/Packages.gz
+ 72843db13530b5eff98aa9d96d8c6e37bf17125e 4645 main/binary-amd64/Packages
+ 2981c6f641ecd996446ed588b0530f5ecadab904 1965 main/binary-amd64/Packages.gz
  85e0aa60660954f0be2b863af90cdab7e93148b1 158 main/binary-amd64/Release
- 4ca78a5f49c0d7f395e0cc54c3112b8110b754e6 1689 main/binary-i386/Packages
- 4761b97c696b941d20fd65019942d42571ea2990 816 main/binary-i386/Packages.gz
+ 4ea28479bb99d31ea5c1732ae86570d7b573a5e0 2408 main/binary-i386/Packages
+ d54faca861a836a1ee4e277b7bb1f112caf1bf63 1072 main/binary-i386/Packages.gz
  18aafc4758220c4afb579ad490a37cd779563708 157 main/binary-i386/Release
 SHA256:
- f6474697e9019a482ccd95b09666fb44d98c17415297d8149a4d95c0c99d9c4c 3926 main/binary-amd64/Packages
- e000051f00d635caeb7be3ce61be926e4f4f64aaba673226bbffc23e008d7594 1726 main/binary-amd64/Packages.gz
+ f20bdd1531d2d34322037b3ba387c169b9d150ac2ec6484fa2df278fb2d93dfc 4645 main/binary-amd64/Packages
+ 09aa35659e9b35b44532d084969a5b7e6cba0a393bdea7657800f44a9ce181d1 1965 main/binary-amd64/Packages.gz
  716bdd845030821118268bc28cdf15b0649523be2e546f1f4fd8a1156d38c13c 158 main/binary-amd64/Release
- a8c50a08a3f6145ffeda497f893be516c8e658c559151be0e4b471d8a0560605 1689 main/binary-i386/Packages
- cd6b63e2ed7e9f2dc1539e4f110cba11d7c6ca43f7e9fb28c8e0c23d38aa456a 816 main/binary-i386/Packages.gz
+ c7cc2b0269424a30230ff3be696a6fb17c73e4f79312dae4adee2a2f63032b8b 2408 main/binary-i386/Packages
+ 66b720f90f0405a8408aa319b2802ad9c8dbf44bf8bc270e485365c803392d3a 1072 main/binary-i386/Packages.gz
  b3f767f8e68e4d11220fb9e3fa71fb58c5d611714d18fc0a736812334c08e869 157 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEaYTC1SNzCfrGt0aHm9T8q9GoHM4FAml7Z3gACgkQm9T8q9Go
-HM7lbA//Zzvgzu+UVwnX8LFSIGfYP+aMnOfIPU1C217xvluWt1s/6Jn7dZPLWBN0
-Y0r8uYNcsEchTMlbXYUI7BspkBeuT1JbgpPfF+NCPU9y5pMTWUaEhrKFpXPjV6q9
-BSgEfG9xlcYoq069okrTqKlPNVab+JajHEQ/+VJiVekKrP6Yb1VnH38CvaQyNKsw
-LIsqVpAxJEtFn75OkHrQv2DR4Abqan8Nl8pk9TxwISAgFy/uEFgkVOizDZBonM9w
-YF/4gWX8dK3eZpJ62DCDLHOGbJJfP9loDoawCz+C4wbqYyg9YYEk5d657zK80TpU
-JEg5sAyzgH2bBJApwyPcXhjPUSnlmwnxAiL9hUofD6A+5jG917Zzw3iXo8xRrxeo
-k+nYncXSlGfaHD4qmDbJUVXbDANP4JQ4f7jPBInDPlj9eoUXhHojDY20bAoOGddh
-lq1w8xUF6RFQZ1LbwDaCplS3EKqSjZSVPctqqyqKl/i9eGIk4yK42azuNUy/ZHzt
-dT/2wvRbDAePwO9BYEBoRNxjatx1joDHkhZgH6ibTv18OcX9NrxpZC4I3lOhHn/d
-m2YjwX9oSNbMqR04ccPqEqGCsNpsT+RLOdiRrWdtj9sFvUjcReH6g5U1OVzGjqOO
-JBVlHuvK5J/5eMzyAAhuThFLcQ3TO2C1N1brlGemsy1HCb0mV5w=
-=XY4J
+iQIzBAEBCgAdFiEEaYTC1SNzCfrGt0aHm9T8q9GoHM4FAmmUxywACgkQm9T8q9Go
+HM6Qhw//dGzkrqxAR3aHXDXhLNo2qwxcswcAMtGlUapA9oeiN/0LWSxSmYfUtfub
+wU+A/z1YWmkmLbv5p589chimDMCPVy4ZUwqKO5qvmYCZhw6LjnkT2rdXdKXZdsV4
+QPIFhPiBs1RVxSofGIqFRvYqtG5IDn7Wj5EfpEsN43X8SquhaeJ6OpUGV9O73cPc
+L2RGtDD2NS5EfHnrE/79chIYPehbyqdC/6/CV+cN3x2QNk9x/my/sWUHwKjvXf9b
+yB5sj9ssQEuoaeuaSAemNqNNEe0RyuHnaYNzUdWhDVqOLofjEtKNO0/+/hoSh7O/
+jDNIbscGu3EXJBsOC/SDgC+GBAggfVKJLYkzca/60sbTXmWbsTs8I+aLpAbBUgyE
+ANVCDOmJEiyZtNpfOzuMScfwIuDwBqBvGUudm2b8sxfc8Rfk9HxbgEXcfIK6Yyzp
+6S4Uo5wafABZ0XBIaoUaKpyPuw9Mxg6UgHaphiwZRSoLRAe7uSZy9tz7evLzUmpc
+vxdVKVppQQPKpoEeV5qE69p7ykCWuxetRagUf9ZgugEuGo/D/0p8DCyKtbV1AQd4
+tBG4p4HSac1XHLZv1GD9eHjN3Vn2YvUmbHHBdtQ0WKO/twuPVgNEKkJfqDa922cp
+iaQPnqxWOZCKWvWlXpxBQvXiMr82wFPm1qgbt6iRwM5XF1fAjPE=
+=mz3i
 -----END PGP SIGNATURE-----
