@@ -20,18 +20,19 @@ Description: PluriOS Calamares Settings and Branding
  As part of the branding the installer slideshow is contained within.
 
 Package: plurios-firefox-profiles
-Version: 1.0.0
+Version: 1.1.0
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
-Installed-Size: 96
+Installed-Size: 72
+Depends: plurios-welcome
 Homepage: https://github.com/FershoUno/plurios-firefox-profiles
 Priority: optional
 Section: web
-Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.0.0_all.deb
-Size: 7532
-SHA256: e239b4072f26f640f873cb3732efd6856cd7e0129bc4c2ca98bd0eaddf25f719
-SHA1: f6571af928765f26b96c1355865cf8956223af4a
-MD5sum: dd8a5f63f156338c1175f9a84765d8b8
+Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.1.0_all.deb
+Size: 5676
+SHA256: c6f2216cc7113ce649bdcbb965f2c491196a590b563cb6a02ac6235c3f25cd83
+SHA1: 51285d1db2a3cc3ffad01fb6133efe5430680fbf
+MD5sum: 33ec0c10d8f21a828e3889650dfdcc1a
 Description: PluriOS Firefox profiles
   Meta package providing the default Firefox profile customization for PluriOS.
   Forked from parrot-interface and modified to match PluriOS design, security
@@ -58,4 +59,22 @@ MD5sum: 58d97a3aa342a562d2ad197b5615efee
 Description: boot animation for PluriOS
  .
  This package contains the spinner theme.
+
+Package: plurios-welcome
+Version: 0.0.1
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Installed-Size: 28
+Homepage: https://github.com/FershoUno/plurios-welcome
+Priority: optional
+Section: web
+Filename: pool/main/p/plurios-welcome/plurios-welcome_0.0.1_all.deb
+Size: 2864
+SHA256: bb183360757a235554e91dae57c336336477ff06fae0151bfa68e80e2dd88650
+SHA1: bc7b92fec7f132a7ceea77ba2a17c5d93da84346
+MD5sum: 46c1e7861f1e74f2d9f8240553563767
+Description: PluriOS Welcome HTML
+ Provides the HTML content for the PluriOS welcome page, presenting a
+ brief overview of the project, its goals, and key features. This package
+ is used by plurios-firefox-profiles to display the welcome interface.
 

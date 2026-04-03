@@ -33,6 +33,7 @@ declare -a repos=(
 	"https://github.com/FershoUno/plurios-icons"
 	"https://github.com/FershoUno/rustdesk"
 	"https://github.com/FershoUno/plurios-firefox-profiles"
+	"https://github.com/FershoUno/plurios-welcome"
 )
 
 # Verifica permisos

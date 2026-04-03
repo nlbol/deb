@@ -1,17 +1,17 @@
 Package: avda
 Homepage: https://github.com/FershoUno/avda
-Version: 1.13.1
+Version: 1.14.0
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Architecture: amd64
-Installed-Size: 8628
+Installed-Size: 8724
 Copyright: GPL-3.0
 Priority: optional
 Section: misc
-Filename: pool/main/a/avda/avda_1.13.1_amd64.deb
-Size: 2798616
-SHA256: f96e020832674fae2dcbd881532005f461ce37788e7331a17dbed12af2449397
-SHA1: be69d6a424086d2a96059325d6e231b3f7f58889
-MD5sum: 1950bd06d5cf7846760c63eca0f9798e
+Filename: pool/main/a/avda/avda_1.14.0_amd64.deb
+Size: 2854192
+SHA256: 18897bb7c44ee70eda991071ae959c7f31100c07b537569b0c8974118ef733d3
+SHA1: 403020d4885b2cd7687098743e43cd7618c0ecb4
+MD5sum: 2cbe058d8bbf3d5ebf76343bf3ed8f5d
 Description: A desktop app for generating 
  and viewing one-time passwords from Aegis 
  Authenticator backups.
@@ -38,18 +38,19 @@ Description: PluriOS Calamares Settings and Branding
  As part of the branding the installer slideshow is contained within.
 
 Package: plurios-firefox-profiles
-Version: 1.0.0
+Version: 1.1.0
 Architecture: all
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
-Installed-Size: 96
+Installed-Size: 72
+Depends: plurios-welcome
 Homepage: https://github.com/FershoUno/plurios-firefox-profiles
 Priority: optional
 Section: web
-Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.0.0_all.deb
-Size: 7532
-SHA256: e239b4072f26f640f873cb3732efd6856cd7e0129bc4c2ca98bd0eaddf25f719
-SHA1: f6571af928765f26b96c1355865cf8956223af4a
-MD5sum: dd8a5f63f156338c1175f9a84765d8b8
+Filename: pool/main/p/plurios-firefox-profiles/plurios-firefox-profiles_1.1.0_all.deb
+Size: 5676
+SHA256: c6f2216cc7113ce649bdcbb965f2c491196a590b563cb6a02ac6235c3f25cd83
+SHA1: 51285d1db2a3cc3ffad01fb6133efe5430680fbf
+MD5sum: 33ec0c10d8f21a828e3889650dfdcc1a
 Description: PluriOS Firefox profiles
   Meta package providing the default Firefox profile customization for PluriOS.
   Forked from parrot-interface and modified to match PluriOS design, security
@@ -108,19 +109,37 @@ Description: boot animation for PluriOS
  .
  This package contains the spinner theme.
 
+Package: plurios-welcome
+Version: 0.0.1
+Architecture: all
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Installed-Size: 28
+Homepage: https://github.com/FershoUno/plurios-welcome
+Priority: optional
+Section: web
+Filename: pool/main/p/plurios-welcome/plurios-welcome_0.0.1_all.deb
+Size: 2864
+SHA256: bb183360757a235554e91dae57c336336477ff06fae0151bfa68e80e2dd88650
+SHA1: bc7b92fec7f132a7ceea77ba2a17c5d93da84346
+MD5sum: 46c1e7861f1e74f2d9f8240553563767
+Description: PluriOS Welcome HTML
+ Provides the HTML content for the PluriOS welcome page, presenting a
+ brief overview of the project, its goals, and key features. This package
+ is used by plurios-firefox-profiles to display the welcome interface.
+
 Package: rustdesk
-Version: 1.4.5
+Version: 1.4.6
 Architecture: amd64
 Maintainer: rustdesk <info@rustdesk.com>
 Homepage: https://rustdesk.com
-Depends: libgtk-3-0, libxcb-randr0, libxdo3, libxfixes3, libxcb-shape0, libxcb-xfixes0, libasound2, libsystemd0, curl, libva2, libva-drm2, libva-x11-2, libgstreamer-plugins-base1.0-0, libpam0g, gstreamer1.0-pipewire
+Depends: libgtk-3-0, libxcb-randr0, libxdo3 | libxdo4, libxfixes3, libxcb-shape0, libxcb-xfixes0, libasound2, libsystemd0, curl, libva2, libva-drm2, libva-x11-2, libgstreamer-plugins-base1.0-0, libpam0g, gstreamer1.0-pipewire
 Recommends: libayatana-appindicator3-1
 Priority: optional
 Section: net
-Filename: pool/main/r/rustdesk/rustdesk_1.4.5_amd64.deb
-Size: 23060404
-SHA256: 6117ea2c2f5885830bff64b6b695b2596a2613dc35301539f19ae52747181c83
-SHA1: 6d26fe057c5a96e1c581bb80fa6719c561e93644
-MD5sum: c2d53dda06691e9c8687566b157c7f04
+Filename: pool/main/r/rustdesk/rustdesk_1.4.6_amd64.deb
+Size: 23130764
+SHA256: 0da46d7a7b252282ded5323f74319a10c1fa7271001d3b297b3def415c8c8f04
+SHA1: 784679a7660110d0836b730d01471e618768d1a6
+MD5sum: 79fd067cda039f5d57b199a77b4ca5d5
 Description: A remote control software.
 
