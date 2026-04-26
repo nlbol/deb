@@ -73,6 +73,22 @@ Description: Tema simple para Grub de PluriOS
   Fork del tema "virtual_future_grub_theme"
   repositorio actual RomjanHossain/Grub-Themes.
 
+Package: plurios-gufw-profiles
+Version: 1.0.0
+Architecture: all
+Depends: tor, gufw
+Installed-Size: 16
+Maintainer: Fersho Uno <fersh0un0@gmail.com>
+Copyright: GPL-3.0-or-later
+Priority: optional
+Section: misc
+Filename: pool/main/p/plurios-gufw-profiles/plurios-gufw-profiles_1.0.0_all.deb
+Size: 1100
+SHA256: 23e96f387ab2bf25b50c38b578890fe3945bbd976ca132f52cb773058c9fd3b1
+SHA1: 26b346a2d37bf56d125ac8d11ff0c5cbdc619ef9
+MD5sum: 69bd72987cdbb31bd33c6f368a75d462
+Description: Paquete de perfiles de configuración para GUFW.
+
 Package: plurios-icons
 Version: 1.0.0
 Architecture: amd64
