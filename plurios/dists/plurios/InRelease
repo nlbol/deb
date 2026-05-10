@@ -6,44 +6,44 @@ Label: PluriOS Repository
 Suite: plurios
 Codename: plurios
 Version: 2.5.1
-Date: Sun, 26 Apr 2026 19:23:55 UTC
+Date: Sun, 10 May 2026 17:41:27 UTC
 Architectures: amd64 i386
 Components: main
 Description: Repositorio de paquetes de PluriOS
 MD5Sum:
- 779868ccd16d92fcc754660eb5d74c03 5902 main/binary-amd64/Packages
- 0f2516cc6819f11d2fba1837cbb6c0e8 2410 main/binary-amd64/Packages.gz
+ bc8759acae680f8c09dff87f6a3845cb 5902 main/binary-amd64/Packages
+ 412f7238c22723d9379d64fdf86aef17 2406 main/binary-amd64/Packages.gz
  0ffc579cba6c65109135d673163959eb 158 main/binary-amd64/Release
  eb02af9a573ff22ec8cd58e97e7b729e 3655 main/binary-i386/Packages
  35fc3c19554cfed915bfe8fd3a19ffd2 1529 main/binary-i386/Packages.gz
  5979bede0109744e79e42847d6073086 157 main/binary-i386/Release
 SHA1:
- 2bfb36e0313f6f1092b99a0bd09afe73d88ce784 5902 main/binary-amd64/Packages
- 92cc7877f7949d4727b2766288a2c10ea0368722 2410 main/binary-amd64/Packages.gz
+ 27327b80ab8e9c3a4bbe5ffd60d208c1be20879f 5902 main/binary-amd64/Packages
+ 7a4ae06145f1a9e2277920c574301ca32d10cb4b 2406 main/binary-amd64/Packages.gz
  85e0aa60660954f0be2b863af90cdab7e93148b1 158 main/binary-amd64/Release
  5fe8e51336d854cd1c0eb38d30c66de065303b2b 3655 main/binary-i386/Packages
  53937aad17af191b183dafbaf449788951412095 1529 main/binary-i386/Packages.gz
  18aafc4758220c4afb579ad490a37cd779563708 157 main/binary-i386/Release
 SHA256:
- 72babc74a550e37f363d4de647400225a3683b6ce35ce01d4e301b81da38f9b0 5902 main/binary-amd64/Packages
- e495ae112b3e94b33c1f0c32fe6beee706f7543a3a8cc53de37bfef5fbce7740 2410 main/binary-amd64/Packages.gz
+ 04e82929565bb5cc588e3f83f4cee51e303305b1a7fc0c23206e2c24f1222753 5902 main/binary-amd64/Packages
+ cb74190f8be48da21fec90b7e81f075870f4245c87fcdb0f284b5e45ffe9091e 2406 main/binary-amd64/Packages.gz
  716bdd845030821118268bc28cdf15b0649523be2e546f1f4fd8a1156d38c13c 158 main/binary-amd64/Release
  1f3a997c9d1c2f0c7ed47da8a625cabfb7738671350e4da8bb0820220564aced 3655 main/binary-i386/Packages
  25a6098dc41ff8bf8270390eae33b1d2d18afeabb4b3d626d7665841373d75dc 1529 main/binary-i386/Packages.gz
  b3f767f8e68e4d11220fb9e3fa71fb58c5d611714d18fc0a736812334c08e869 157 main/binary-i386/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEaYTC1SNzCfrGt0aHm9T8q9GoHM4FAmnuZkwACgkQm9T8q9Go
-HM5zOxAAnAXl2pUGb6K+NdKEIGa4Z2Hl0gNDjOg2ASwmqJ1xIIht5H+DNL+m4zNl
-eT7XP/J99Uscz23wvOTvbMt0YUxHIFEseKHXCCNxuxLct4BHXB/PYg7EmFm/Sra4
-cMJVdUXRYCvjIubc5/qTq0L2CCQI+kuk0gjnlwjjj/cAUgo3pYYzwkv2Y3vKSwsG
-cEEYo2LQLoiSPAo7aiMwWu+qywvvWqdnCfKlSMPz2S13sobvhHz0uUbQrcdM22n+
-u6PS9OV+wwbkUa+RRiGrR28s/WVWs8LuT0fS4E4WCGwMOkDfuWP3jippdND5E6k1
-GyG/94LeYls+vNgVJqnYlJnS1evkQsnexk2+O1HbmNhV4DbpXi5qsQPePNAm/MFo
-Cus35ORnbnJ/KYuuABGfvwuheZ280dOegm5BEG6EqKb3EBx4JlBtiI9ZSojE7XXc
-HsWSmDMP5vA6fy7fY5ioQ1lAUZprSE/7Q/EDu6zzsOQ+4dJkW/jg0IfaWAG6pSCv
-DNHW2d8U0yH9wmbAvp2HsGiPWb45xlkakfgKGdA3Lcl1YOvcM5t6PBqeUb8lMC15
-qYpdEc/lfAU99Tl965cv7ZSJXm+qHbtV3l2hhVLobymraVvZBfYsrkpEnVL33/Ui
-SAQvr9PjJfAV2CW4ShNZCsOheueBZz1TAE6/N7siBBuCEMAtwTY=
-=AYD3
+iQIzBAEBCgAdFiEEaYTC1SNzCfrGt0aHm9T8q9GoHM4FAmoAw0cACgkQm9T8q9Go
+HM7Ogw//SQ1CFNkLyUppMEwl/mPSuhD2nCDzdIY2M8FjAk2bgJgFvFVE6D2Uz+/Y
+zU7XfLLi6fWgMC6v7OvGwbGtV/goGDlKNN5p+63hvf1w38CJFVsYpOxs9I6FYTZc
+XCQyF+K1JvFvtm5glhjQvsNDdrYMWgKd6igGh/6MtJen61fvcr+305PezffzVNEJ
+HBLMoN8ovMijNlno8mHF4ijGqpAHItaFrvoxhVfGNDq5aORA3QPrU5v9BXshbja7
+Qb4mGJLTLJL05bf0Vk7KcaEia6+XDeU1eeo+Tz0dpy930ZX1PYQthAs/GjMTEXs5
+PsNXM+2kEfGwGtIm8/yTRpMwqEWFs3Dhfs1RvQwZtJKAiKSOcqANp1aNSKoBwYu8
+BmzaOgZtYaS6q9okYvuE1jpiNbhuTEnbSCZIHBbk26lWVtpDnZB0JE4nBTxHFuRh
+XgdGK6n1RXo01TWmBjtPLJ9OG4cBddgZMl9RnQAGXUqwW/BFbMbsNLVYgmSCTX88
+4rv0/ISqiE35f3kmhzlBN8GGnwT76zdTqjSEL96t6Zcvhb4RDMXqWax+eB3qH87f
+YdGNVqEFqHdbhlF8dj9Ww/lpNKltaV/IT4V+XAIn9GvM0SuDANOSM0B1Wq5AGmz6
+Xwb0RuRvYcLsUAXwhj4jSd0e9dpV9ocMqSqrMnZuo9nhudhh/GM=
+=j9SL
 -----END PGP SIGNATURE-----

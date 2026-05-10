@@ -1,17 +1,17 @@
 Package: avda
 Homepage: https://github.com/FershoUno/avda
-Version: 1.14.0
+Version: 1.15.0
 Maintainer: Fersho Uno <fersh0un0@gmail.com>
 Architecture: amd64
 Installed-Size: 8724
 Copyright: GPL-3.0
 Priority: optional
 Section: misc
-Filename: pool/main/a/avda/avda_1.14.0_amd64.deb
-Size: 2854192
-SHA256: 18897bb7c44ee70eda991071ae959c7f31100c07b537569b0c8974118ef733d3
-SHA1: 403020d4885b2cd7687098743e43cd7618c0ecb4
-MD5sum: 2cbe058d8bbf3d5ebf76343bf3ed8f5d
+Filename: pool/main/a/avda/avda_1.15.0_amd64.deb
+Size: 2854724
+SHA256: 27aca3caf9298a504c764c5d15578ada75eb26f7535719815b58979e42700e83
+SHA1: 36261f8ac8d60b0126a4db774b37cb23e3a1c741
+MD5sum: 828a32aac6b7c384f4371ee8aebfea70
 Description: A desktop app for generating 
  and viewing one-time passwords from Aegis 
  Authenticator backups.
